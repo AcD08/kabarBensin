@@ -16,8 +16,6 @@ const Blog = () => {
       return item.description.includes('BBM');
     });
 
-  console.log(filteredData);
-
   return (
     <>
       <div className="flex justify-center mt-10 flex-wrap ">
@@ -33,7 +31,7 @@ const Blog = () => {
                 <a
                   target="_blank"
                   href={item.link}
-                  className="block p-3 max-w-md bg-gray-800 rounded-lg border border-gray-700 hover:bg-gray-700"
+                  className="block p-3 max-w-md bg-gray-800 rounded-lg border border-gray-700 hover:bg-gray-500"
                   rel="noreferrer"
                 >
                   <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">

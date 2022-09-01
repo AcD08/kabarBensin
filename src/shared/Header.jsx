@@ -3,7 +3,7 @@ import { FaGasPump } from 'react-icons/fa';
 
 const Header = () => {
   return (
-    <nav className="p-5 bg-slate-800 border-gray-200">
+    <nav className="p-5 bg-slate-800 border-gray-200 w-full md:w-full lg:w-full 2xl:w-full rounded sm:w-full 5xl:w-full">
       <div className="container flex flex-wrap justify-center">
         <span className="text-xl font-semibold whitespace-nowrap text-white">
           KabarBens

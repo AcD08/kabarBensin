@@ -1,3 +1,6 @@
 {
-  "data": {}
+  "data": {
+    "lastUpdate": "September 2022",
+    "content": [{ "id": 1, "namaPulau": "Jawa" }]
+  }
 }

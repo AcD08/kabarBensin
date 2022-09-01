@@ -4,6 +4,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {},
+      screens: {
+        '5xl': '1920px',
+      },
     },
     container: {
       center: true,

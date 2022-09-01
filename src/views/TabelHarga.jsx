@@ -4,7 +4,7 @@ const TabelHarga = () => {
   return (
     <>
       <>
-        <div className="flex justify-center w-auto mt-5">
+        <div className="flex justify-center w-auto p-5 mt-5">
           <div className="p-5 text-3xl font-semibold text-left text-blue-900 bg-blue-100 rounded-lg mb-5">
             TABEL HARGA BENSIN UMUM
             <p className="mt-2 text-sm font-normal">
@@ -20,7 +20,7 @@ const TabelHarga = () => {
             </ul>
             <ul className="space-y-1 max-w list-disc list-inside text-sm font-normal">
               <li>
-                Shell (Super RON 92, V-Power RON 95, V-Power Nitro+ RON 95)
+                Shell (Super RON 92, V-Power RON 95, V-Power Nitro+ RON 98)
               </li>
             </ul>
             <ul className="space-y-1 max-w list-disc list-inside text-sm font-normal">
@@ -35,21 +35,21 @@ const TabelHarga = () => {
             </span>
           </div>
         </div>
-        <div className="flex justify-around">
+        <div className="flex justify-around flex-wrap">
           <select
             id="daerah"
-            className="bg-gray-50 border md:w-[15%] sm:w-[20%] ml-[5%] border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5"
-            defaultValue="Pilih Daerah..."
+            className="bg-gray-50 border w-full mx-5 md:w-[18%] ml-[5%] border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5"
+            defaultValue="Pilih Wilayah..."
           >
-            <option>Pilih Daerah...</option>
+            <option>Pilih Wilayah...</option>
             <option>Daerah Nganu</option>
           </select>
-          <p className="mt-3 mr-[5%]">
+          <p className="mt-3 md:mr-[5%]">
             Last Update: <span className="text-red-600">12 Oktober 2022</span>
           </p>
         </div>
-        <div className="overflow-x-auto relative sm:rounded-lg flex justify-center mt-5">
-          <table className="text-sm text-left text-white table-auto w-3/5">
+        <div className="overflow-y-auto relative sm:rounded-lg flex justify-center mt-5">
+          <table className="text-sm text-left text-white table-auto w-full md:w-3/5">
             <thead className="text-xs text-white uppercase bg-blue-600">
               <tr>
                 <th scope="col" className="py-5 px-6">
@@ -123,7 +123,7 @@ const TabelHarga = () => {
         </div>
       </>
       <>
-        <div className="flex justify-center w-auto mt-5">
+        <div className="flex justify-center w-auto p-5 mt-5">
           <div className="p-5 text-3xl font-semibold text-left text-green-900 bg-green-100 rounded-lg mb-5">
             TABEL HARGA DIESEL
             <p className="mt-2 text-sm font-normal">
@@ -132,10 +132,10 @@ const TabelHarga = () => {
               Antara lain adalah:
             </p>
             <ul className="space-y-1 max-w list-disc list-inside text-sm font-normal">
-              <li>Pertamina (DexLite CN 51, Dex CN 53).</li>
+              <li>Pertamina (Solar CN 48, DexLite CN 51, Dex CN 53).</li>
             </ul>
             <ul className="space-y-1 max-w list-disc list-inside text-sm font-normal">
-              <li>Shell (V-Power Diesel CN 51)</li>
+              <li>Shell (V-Power Diesel CN 51, Shell Diesel Extra CN 53)</li>
             </ul>
             <ul className="space-y-1 max-w list-disc list-inside text-sm font-normal">
               <li>British Petroleum (BP Diesel CN 48)</li>
@@ -148,7 +148,7 @@ const TabelHarga = () => {
         </div>
 
         <div className="overflow-x-auto relative sm:rounded-lg flex justify-center mt-5">
-          <table className="text-sm text-left text-white table-auto w-3/5">
+          <table className="text-sm text-left text-white w-full md:w-3/5 table-auto">
             <thead className="text-xs text-white uppercase bg-green-600">
               <tr>
                 <th scope="col" className="py-5 px-6">
@@ -203,7 +203,7 @@ const TabelHarga = () => {
           </table>
         </div>
       </>
-      <div className="ml-[20%] mt-5">
+      <div className="ml-[10%] md:ml-[20%] mt-5">
         <h2 className="mb-2 text-lg font-semibold text-black">
           Daftar Referensi Harga
         </h2>
@@ -211,7 +211,7 @@ const TabelHarga = () => {
           <li>
             <a
               href="https://mypertamina.id/fuels-harga"
-              className="hover:text-blue-400"
+              className="hover:text-blue-600"
               target="_blank"
               rel="noreferrer"
             >
@@ -221,7 +221,7 @@ const TabelHarga = () => {
           <li>
             <a
               href="https://www.shell.co.id/in_id/pengendara-bermotor/bahan-bakar-shell/how-shell-price-fuel.html"
-              className="hover:text-blue-400"
+              className="hover:text-blue-600"
               target="_blank"
               rel="noreferrer"
             >

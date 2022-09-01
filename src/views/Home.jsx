@@ -1,3 +1,4 @@
+// FIXME: betulin header yang masih ga bisa buka burger menu
 import React from 'react';
 const Header = React.lazy(() => import('../shared/Header'));
 const Footer = React.lazy(() => import('../shared/Footer'));
