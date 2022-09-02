@@ -1,6 +1,15 @@
 import React from 'react';
+import hargaJson from '../data/harga.json';
 
 const TabelHarga = () => {
+  const filteredData = hargaJson.data.content.filter(item => {
+    return item.namaWilyah === 'Jabodetabek';
+  });
+  console.log(
+    filteredData.map(item => {
+      return item.listData.filter(data => data.typeSPBU === 'Pertamina');
+    })
+  );
   return (
     <>
       <>
@@ -31,7 +40,7 @@ const TabelHarga = () => {
             </ul>
             <span className="text-sm font-normal text-red-500">
               *Catatan: SPBU Vivo, British Petroleum, dan Shell hanya ada di
-              beberapa pulau di Indonesia.
+              beberapa wilayah di Indonesia.
             </span>
           </div>
         </div>
@@ -45,7 +54,8 @@ const TabelHarga = () => {
             <option>Daerah Nganu</option>
           </select>
           <p className="mt-3 md:mr-[5%]">
-            Last Update: <span className="text-red-600">12 Oktober 2022</span>
+            Last Update:{' '}
+            <span className="text-red-600">{hargaJson.data.lastUpdate}</span>
           </p>
         </div>
         <div className="overflow-y-auto relative sm:rounded-lg flex justify-center mt-5">
@@ -132,7 +142,7 @@ const TabelHarga = () => {
               Antara lain adalah:
             </p>
             <ul className="space-y-1 max-w list-disc list-inside text-sm font-normal">
-              <li>Pertamina (Solar CN 48, DexLite CN 51, Dex CN 53).</li>
+              <li>Pertamina (DexLite CN 51, Dex CN 53).</li>
             </ul>
             <ul className="space-y-1 max-w list-disc list-inside text-sm font-normal">
               <li>Shell (V-Power Diesel CN 51, Shell Diesel Extra CN 53)</li>
@@ -142,7 +152,7 @@ const TabelHarga = () => {
             </ul>
             <span className="text-sm font-normal text-red-500">
               *Catatan: SPBU British Petroleum, dan Shell hanya ada di beberapa
-              pulau di Indonesia.
+              wilayah di Indonesia.
             </span>
           </div>
         </div>
