@@ -15,6 +15,7 @@ const Header = () => {
           className="inline-flex justify-center items-center ml-3 text-gray-400 rounded-lg md:hidden hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 dark:text-gray-400 dark:hover:text-white dark:focus:ring-gray-500"
           aria-controls="navbar-solid-bg"
           aria-expanded="false"
+          id="triggerEl"
         >
           <span className="sr-only">Open main menu</span>
           <svg
@@ -34,6 +35,7 @@ const Header = () => {
         <div
           className="hidden w-full md:block md:w-auto ml-10"
           id="navbar-solid-bg"
+          ref={ref}
         >
           <ul className="flex flex-col mt-4 bg-gray-50 rounded-lg md:flex-row md:space-x-3 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent">
             <li>

@@ -1,6 +1,6 @@
 {
   "data": {
-    "lastUpdate": "07 September 2022",
+    "lastUpdate": "September 2022",
     "content": [
       {
         "id": 1,
@@ -8,20 +8,21 @@
         "listData": [
           {
             "id": 1,
+            "typeSPBU": "Pertamina",
             "dataBensinUmum": [
               {
                 "id": 1,
                 "typeBensin": "Pertalite",
                 "typeRon": "90",
                 "catatanKhusus": "",
-                "harga": "Rp. 10.000"
+                "harga": "Rp. 7.650"
               },
               {
                 "id": 2,
                 "typeBensin": "Pertamax",
                 "typeRon": "92",
                 "catatanKhusus": "",
-                "harga": "Rp. 14.500"
+                "harga": "Rp. 12.500"
               },
               {
                 "id": 3,
@@ -29,69 +30,6 @@
                 "typeRon": "98",
                 "catatanKhusus": "",
                 "harga": "Rp. 15.900"
-              },
-              {
-                "id": 4,
-                "typeBensin": "Shell Super",
-                "typeRon": "92",
-                "catatanKhusus": "",
-                "harga": "Rp. 15.420"
-              },
-              {
-                "id": 5,
-                "typeBensin": "Shell V-Power",
-                "typeRon": "95",
-                "catatanKhusus": "",
-                "harga": "Rp. 16.130"
-              },
-              {
-                "id": 6,
-                "typeBensin": "Shell V-Power Nitro+",
-                "typeRon": "98",
-                "catatanKhusus": "",
-                "harga": "Rp. 16.510"
-              },
-              {
-                "id": 7,
-                "typeBensin": "Revvo89",
-                "typeRon": "89",
-                "catatanKhusus": "",
-                "harga": "Rp. 10.990"
-              },
-              {
-                "id": 8,
-                "typeBensin": "Revvo92",
-                "typeRon": "92",
-                "catatanKhusus": "",
-                "harga": "Rp. 15.400"
-              },
-              {
-                "id": 9,
-                "typeBensin": "Revvo95",
-                "typeRon": "95",
-                "catatanKhusus": "",
-                "harga": "Rp. 16.100"
-              },
-              {
-                "id": 10,
-                "typeBensin": "BP90",
-                "typeRon": "90",
-                "catatanKhusus": "",
-                "harga": "Rp. 15.320"
-              },
-              {
-                "id": 11,
-                "typeBensin": "BP92",
-                "typeRon": "92",
-                "catatanKhusus": "",
-                "harga": "Rp. 15.420"
-              },
-              {
-                "id": 12,
-                "typeBensin": "BP95",
-                "typeRon": "95",
-                "catatanKhusus": "",
-                "harga": "Rp. 16.130"
               }
             ],
             "dataBensinDiesel": [
@@ -108,34 +46,112 @@
                 "typeCN": "51",
                 "catatanKhusus": "",
                 "harga": "Rp. 17.100"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "typeSPBU": "Shell",
+            "dataBensinUmum": [
+              {
+                "id": 1,
+                "typeBensin": "Shell Super",
+                "typeRon": "92",
+                "catatanKhusus": "",
+                "harga": "Rp. 15.420"
+              },
+              {
+                "id": 2,
+                "typeBensin": "Shell V-Power",
+                "typeRon": "95",
+                "catatanKhusus": "",
+                "harga": "Rp. 16.130"
               },
               {
                 "id": 3,
+                "typeBensin": "Shell V-Power Nitro+",
+                "typeRon": "98",
+                "catatanKhusus": "",
+                "harga": "Rp. 16.510"
+              }
+            ],
+            "dataBensinDiesel": [
+              {
+                "id": 1,
                 "typeBensin": "Shell V-Power Diesel",
                 "typeCN": "51",
                 "catatanKhusus": "",
                 "harga": "Rp. 18.310"
               },
               {
-                "id": 4,
+                "id": 2,
                 "typeBensin": "Shell Diesel Extra",
                 "typeCN": "53",
                 "catatanKhusus": "",
                 "harga": "N/A"
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "typeSPBU": "Vivo",
+            "dataBensinUmum": [
+              {
+                "id": 1,
+                "typeBensin": "Revvo89",
+                "typeRon": "89",
+                "catatanKhusus": "",
+                "harga": "Rp. 9.990"
               },
               {
-                "id": 5,
+                "id": 2,
+                "typeBensin": "Revvo92",
+                "typeRon": "92",
+                "catatanKhusus": "",
+                "harga": "Rp. 17.500"
+              },
+              {
+                "id": 3,
+                "typeBensin": "Revvo95",
+                "typeRon": "95",
+                "catatanKhusus": "",
+                "harga": "Rp. 19.500"
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "typeSPBU": "British Petroleum",
+            "dataBensinUmum": [
+              {
+                "id": 1,
+                "typeBensin": "BP90",
+                "typeRon": "90",
+                "catatanKhusus": "",
+                "harga": "Rp. 17.195"
+              },
+              {
+                "id": 2,
+                "typeBensin": "BP92",
+                "typeRon": "92",
+                "catatanKhusus": "",
+                "harga": "Rp. 17.300"
+              },
+              {
+                "id": 3,
+                "typeBensin": "BP95",
+                "typeRon": "95",
+                "catatanKhusus": "",
+                "harga": "Rp. 18.300"
+              }
+            ],
+            "dataBensinDiesel": [
+              {
+                "id": 1,
                 "typeBensin": "BP Diesel",
                 "typeCN": "48",
                 "catatanKhusus": "",
-                "harga": "Rp. 17.990"
-              },
-              {
-                "id": 6,
-                "typeBensin": "Pertamina BioSolar",
-                "typeCN": "48",
-                "catatanKhusus": "",
-                "harga": "Rp. 6.800"
+                "harga": "Rp. 19.280"
               }
             ]
           }
@@ -147,20 +163,21 @@
         "listData": [
           {
             "id": 1,
+            "typeSPBU": "Pertamina",
             "dataBensinUmum": [
               {
                 "id": 1,
                 "typeBensin": "Pertalite",
                 "typeRon": "90",
                 "catatanKhusus": "",
-                "harga": "Rp. 10.000"
+                "harga": "Rp. 7.650"
               },
               {
                 "id": 2,
                 "typeBensin": "Pertamax",
                 "typeRon": "92",
                 "catatanKhusus": "",
-                "harga": "Rp. 14.500"
+                "harga": "Rp. 12.500"
               },
               {
                 "id": 3,
@@ -168,27 +185,6 @@
                 "typeRon": "98",
                 "catatanKhusus": "",
                 "harga": "Rp. 15.900"
-              },
-              {
-                "id": 4,
-                "typeBensin": "Shell Super",
-                "typeRon": "92",
-                "catatanKhusus": "Jawa Barat/Timur only",
-                "harga": "Rp. 15.420"
-              },
-              {
-                "id": 5,
-                "typeBensin": "Shell V-Power",
-                "typeRon": "95",
-                "catatanKhusus": "Jawa Barat/Timur only",
-                "harga": "Rp. 16.130"
-              },
-              {
-                "id": 6,
-                "typeBensin": "Shell V-Power Nitro+",
-                "typeRon": "98",
-                "catatanKhusus": "Jawa Barat only",
-                "harga": "Rp. 16.510"
               }
             ],
             "dataBensinDiesel": [
@@ -205,27 +201,49 @@
                 "typeCN": "51",
                 "catatanKhusus": "",
                 "harga": "Rp. 17.100"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "typeSPBU": "Shell",
+            "dataBensinUmum": [
+              {
+                "id": 1,
+                "typeBensin": "Shell Super",
+                "typeRon": "92",
+                "catatanKhusus": "Jawa Barat/Timur only",
+                "harga": "Rp. 15.420"
+              },
+              {
+                "id": 2,
+                "typeBensin": "Shell V-Power",
+                "typeRon": "95",
+                "catatanKhusus": "Jawa Barat/Timur only",
+                "harga": "Rp. 16.130"
               },
               {
                 "id": 3,
+                "typeBensin": "Shell V-Power Nitro+",
+                "typeRon": "98",
+                "catatanKhusus": "Jawa Barat only",
+                "harga": "Rp. 16.510"
+              }
+            ],
+            "dataBensinDiesel": [
+              {
+                "id": 1,
                 "typeBensin": "Shell V-Power Diesel",
                 "typeCN": "51",
                 "catatanKhusus": "Jawa Barat only",
                 "harga": "Rp. 18.310"
               },
               {
-                "id": 4,
+                "id": 2,
                 "typeBensin": "Shell Diesel Extra",
                 "typeCN": "53",
                 "catatanKhusus": "Jawa Timur only",
                 "harga": "Rp. 17.990"
-              },
-              {
-                "id": 5,
-                "typeBensin": "Pertamina BioSolar",
-                "typeCN": "48",
-                "catatanKhusus": "",
-                "harga": "Rp. 6.800"
               }
             ]
           }
@@ -237,20 +255,21 @@
         "listData": [
           {
             "id": 1,
+            "typeSPBU": "Pertamina",
             "dataBensinUmum": [
               {
                 "id": 1,
                 "typeBensin": "Pertalite",
                 "typeRon": "90",
                 "catatanKhusus": "",
-                "harga": "Rp. 10.000"
+                "harga": "Rp. 7.650"
               },
               {
                 "id": 2,
                 "typeBensin": "Pertamax",
                 "typeRon": "92",
-                "catatanKhusus": "Perbedaan 350 perak di Aceh, 700 perak di Riau dan Bengkulu.",
-                "harga": "Rp. 14.850"
+                "catatanKhusus": "Perbedaan 250 perak di Aceh, Riau, dan Bengkulu.",
+                "harga": "Rp. 12.750"
               },
               {
                 "id": 3,
@@ -258,27 +277,6 @@
                 "typeRon": "98",
                 "catatanKhusus": "Perbedaan 350 perak di Aceh, Riau, dan Bengkulu.",
                 "harga": "Rp. 16.250"
-              },
-              {
-                "id": 4,
-                "typeBensin": "Shell Super",
-                "typeRon": "92",
-                "catatanKhusus": "Sumatra Utara only",
-                "harga": "Rp. 15.750"
-              },
-              {
-                "id": 5,
-                "typeBensin": "Shell V-Power",
-                "typeRon": "95",
-                "catatanKhusus": "Sumatra Utara only",
-                "harga": "Rp. 16.470"
-              },
-              {
-                "id": 6,
-                "typeBensin": "Shell V-Power Nitro+",
-                "typeRon": "98",
-                "catatanKhusus": "",
-                "harga": "N/A"
               }
             ],
             "dataBensinDiesel": [
@@ -295,27 +293,49 @@
                 "typeCN": "51",
                 "catatanKhusus": "Perbedaan 350 perak di Aceh, Riau, dan Bengkulu.",
                 "harga": "Rp. 17.450"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "typeSPBU": "Shell",
+            "dataBensinUmum": [
+              {
+                "id": 1,
+                "typeBensin": "Shell Super",
+                "typeRon": "92",
+                "catatanKhusus": "Sumatra Utara only",
+                "harga": "Rp. 15.750"
+              },
+              {
+                "id": 2,
+                "typeBensin": "Shell V-Power",
+                "typeRon": "95",
+                "catatanKhusus": "Sumatra Utara only",
+                "harga": "Rp. 16.470"
               },
               {
                 "id": 3,
+                "typeBensin": "Shell V-Power Nitro+",
+                "typeRon": "98",
+                "catatanKhusus": "",
+                "harga": "N/A"
+              }
+            ],
+            "dataBensinDiesel": [
+              {
+                "id": 1,
                 "typeBensin": "Shell V-Power Diesel",
                 "typeCN": "51",
                 "catatanKhusus": "",
                 "harga": "N/A"
               },
               {
-                "id": 4,
+                "id": 2,
                 "typeBensin": "Shell Diesel Extra",
                 "typeCN": "53",
                 "catatanKhusus": "Sumatra Utara only",
                 "harga": "Rp. 18.380"
-              },
-              {
-                "id": 5,
-                "typeBensin": "Pertamina BioSolar",
-                "typeCN": "48",
-                "catatanKhusus": "",
-                "harga": "Rp. 6.800"
               }
             ]
           }
@@ -327,20 +347,21 @@
         "listData": [
           {
             "id": 1,
+            "typeSPBU": "Pertamina",
             "dataBensinUmum": [
               {
                 "id": 1,
                 "typeBensin": "Pertalite",
                 "typeRon": "90",
                 "catatanKhusus": "",
-                "harga": "Rp. 10.000"
+                "harga": "Rp. 7.650"
               },
               {
                 "id": 2,
                 "typeBensin": "Pertamax",
                 "typeRon": "92",
                 "catatanKhusus": "",
-                "harga": "Rp. 14.850"
+                "harga": "Rp. 12.750"
               },
               {
                 "id": 3,
@@ -364,13 +385,6 @@
                 "typeCN": "51",
                 "catatanKhusus": "",
                 "harga": "Rp. 17.450"
-              },
-              {
-                "id": 3,
-                "typeBensin": "Pertamina BioSolar",
-                "typeCN": "48",
-                "catatanKhusus": "",
-                "harga": "Rp. 6.800"
               }
             ]
           }
@@ -382,20 +396,21 @@
         "listData": [
           {
             "id": 1,
+            "typeSPBU": "Pertamina",
             "dataBensinUmum": [
               {
                 "id": 1,
                 "typeBensin": "Pertalite",
                 "typeRon": "90",
                 "catatanKhusus": "",
-                "harga": "Rp. 10.000"
+                "harga": "Rp. 7.650"
               },
               {
                 "id": 2,
                 "typeBensin": "Pertamax",
                 "typeRon": "92",
                 "catatanKhusus": "",
-                "harga": "Rp. 14.500"
+                "harga": "Rp. 12.500"
               },
               {
                 "id": 3,
@@ -419,13 +434,6 @@
                 "typeCN": "51",
                 "catatanKhusus": "",
                 "harga": "Rp. 17.100"
-              },
-              {
-                "id": 3,
-                "typeBensin": "Pertamina BioSolar",
-                "typeCN": "48",
-                "catatanKhusus": "",
-                "harga": "Rp. 6.800"
               }
             ]
           }
@@ -437,20 +445,21 @@
         "listData": [
           {
             "id": 1,
+            "typeSPBU": "Pertamina",
             "dataBensinUmum": [
               {
                 "id": 1,
                 "typeBensin": "Pertalite",
                 "typeRon": "90",
                 "catatanKhusus": "",
-                "harga": "Rp. 10.000"
+                "harga": "Rp. 7.650"
               },
               {
                 "id": 2,
                 "typeBensin": "Pertamax",
                 "typeRon": "92",
                 "catatanKhusus": "",
-                "harga": "Rp. 15.200"
+                "harga": "Rp. 13.000"
               },
               {
                 "id": 3,
@@ -474,13 +483,6 @@
                 "typeCN": "51",
                 "catatanKhusus": "",
                 "harga": "Rp. 17.800"
-              },
-              {
-                "id": 3,
-                "typeBensin": "Pertamina BioSolar",
-                "typeCN": "48",
-                "catatanKhusus": "",
-                "harga": "Rp. 6.800"
               }
             ]
           }
@@ -492,20 +494,21 @@
         "listData": [
           {
             "id": 1,
+            "typeSPBU": "Pertamina",
             "dataBensinUmum": [
               {
                 "id": 1,
                 "typeBensin": "Pertalite",
                 "typeRon": "90",
                 "catatanKhusus": "",
-                "harga": "Rp. 10.000"
+                "harga": "Rp. 7.650"
               },
               {
                 "id": 2,
                 "typeBensin": "Pertamax",
                 "typeRon": "92",
                 "catatanKhusus": "",
-                "harga": "Rp. 14.850"
+                "harga": "Rp. 12.750"
               },
               {
                 "id": 3,
@@ -529,13 +532,6 @@
                 "typeCN": "51",
                 "catatanKhusus": "",
                 "harga": "Rp. 17.450"
-              },
-              {
-                "id": 3,
-                "typeBensin": "Pertamina BioSolar",
-                "typeCN": "48",
-                "catatanKhusus": "",
-                "harga": "Rp. 6.800"
               }
             ]
           }
@@ -547,20 +543,21 @@
         "listData": [
           {
             "id": 1,
+            "typeSPBU": "Pertamina",
             "dataBensinUmum": [
               {
                 "id": 1,
                 "typeBensin": "Pertalite",
                 "typeRon": "90",
                 "catatanKhusus": "",
-                "harga": "Rp. 10.000"
+                "harga": "Rp. 7.650"
               },
               {
                 "id": 2,
                 "typeBensin": "Pertamax",
                 "typeRon": "92",
                 "catatanKhusus": "",
-                "harga": "Rp. 14.850"
+                "harga": "Rp. 12.750"
               },
               {
                 "id": 3,
@@ -584,13 +581,6 @@
                 "typeCN": "51",
                 "catatanKhusus": "",
                 "harga": "Rp. 17.450"
-              },
-              {
-                "id": 3,
-                "typeBensin": "Pertamina BioSolar",
-                "typeCN": "48",
-                "catatanKhusus": "",
-                "harga": "Rp. 6.800"
               }
             ]
           }
@@ -602,20 +592,21 @@
         "listData": [
           {
             "id": 1,
+            "typeSPBU": "Pertamina",
             "dataBensinUmum": [
               {
                 "id": 1,
                 "typeBensin": "Pertalite",
                 "typeRon": "90",
                 "catatanKhusus": "",
-                "harga": "Rp. 10.000"
+                "harga": "Rp. 7.650"
               },
               {
                 "id": 2,
                 "typeBensin": "Pertamax",
                 "typeRon": "92",
                 "catatanKhusus": "",
-                "harga": "Rp. 14.850"
+                "harga": "Rp. 12.750"
               },
               {
                 "id": 3,
@@ -639,13 +630,6 @@
                 "typeCN": "51",
                 "catatanKhusus": "",
                 "harga": "Rp. 17.450"
-              },
-              {
-                "id": 3,
-                "typeBensin": "Pertamina BioSolar",
-                "typeCN": "48",
-                "catatanKhusus": "",
-                "harga": "Rp. 6.800"
               }
             ]
           }
