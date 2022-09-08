@@ -19,8 +19,6 @@ const TabelHarga = () => {
       item => item.namaWilyah === wilayah
     );
 
-    console.log(filteredWilayah);
-
     if (filteredWilayah) {
       for (const data in filteredWilayah) {
         setDataHarga(filteredWilayah[data]);
@@ -99,23 +97,23 @@ const TabelHarga = () => {
         </div>
         {dataHarga.length === 0 && <p>Loading data...</p>}
         {dataHarga.length !== 0 && (
-          <div className="overflow-y-auto relative sm:rounded-lg flex justify-center mt-5">
-            <table className="text-sm text-left text-white table-auto w-full md:w-3/5">
+          <div className="overflow-x-auto relative sm:rounded-lg md:flex md:justify-center mt-5 ">
+            <table className="text-sm text-left text-white w-5 md:w-3/5">
               <thead className="text-xs text-white uppercase bg-blue-600">
                 <tr>
-                  <th scope="col" className="py-5 px-6">
+                  <th scope="col" className="py-3 px-6">
                     RON
                   </th>
-                  <th scope="col" className="py-5 px-6">
+                  <th scope="col" className="py-3 px-6">
                     Pertamina
                   </th>
-                  <th scope="col" className="py-5 px-6">
+                  <th scope="col" className="py-3 px-6">
                     Shell
                   </th>
-                  <th scope="col" className="py-5 px-6">
+                  <th scope="col" className="py-3 px-6">
                     Vivo
                   </th>
-                  <th scope="col" className="py-5 px-6">
+                  <th scope="col" className="py-3 px-6">
                     British Petroleum
                   </th>
                 </tr>
@@ -124,16 +122,16 @@ const TabelHarga = () => {
                 <tr className="bg-gray-700 border-b border-gray-700">
                   <th
                     scope="row"
-                    className="py-5 px-6 font-bold text-white whitespace-nowrap"
+                    className="py-4 px-6 font-bold text-white whitespace-nowrap"
                   >
                     90
                   </th>
-                  <td className="py-5 px-6">
+                  <td className="py-4 px-6">
                     {dataHarga.length !== 0 &&
                       dataHarga[0].dataBensinUmum[0]?.harga}
                   </td>
-                  <td className="py-5 px-6">N/A</td>
-                  <td className="py-5 px-6">
+                  <td className="py-4 px-6">N/A</td>
+                  <td className="py-4 px-6">
                     {dataHarga.length !== 0 &&
                       wilayah !== 'Jabodetabek' &&
                       'N/A'}
@@ -141,7 +139,7 @@ const TabelHarga = () => {
                       wilayah === 'Jabodetabek' &&
                       dataHarga[0].dataBensinUmum[6]?.harga}
                   </td>
-                  <td className="py-5 px-6">
+                  <td className="py-4 px-6">
                     {dataHarga.length !== 0 &&
                       wilayah === 'Jabodetabek' &&
                       dataHarga[0].dataBensinUmum[9]?.harga}
@@ -153,11 +151,11 @@ const TabelHarga = () => {
                 <tr className="bg-gray-800 border-b border-gray-800">
                   <th
                     scope="row"
-                    className="py-5 px-6 font-bold text-white whitespace-nowrap"
+                    className="py-4 px-6 font-bold text-white whitespace-nowrap"
                   >
                     92
                   </th>
-                  <td className="py-5 px-6">
+                  <td className="py-4 px-6">
                     {dataHarga.length !== 0 && (
                       <>
                         <span>{dataHarga[0].dataBensinUmum[1]?.harga}</span>
@@ -168,7 +166,7 @@ const TabelHarga = () => {
                       </>
                     )}
                   </td>
-                  <td className="py-5 px-6">
+                  <td className="py-4 px-6">
                     {dataHarga.length !== 0 &&
                       wilayah === 'Jabodetabek' &&
                       dataHarga[0].dataBensinUmum[3]?.harga}
@@ -203,7 +201,7 @@ const TabelHarga = () => {
                     {dataHarga.length !== 0 && wilayah === 'Papua' && 'N/A'}
                     {dataHarga.length !== 0 && wilayah === 'Maluku' && 'N/A'}
                   </td>
-                  <td className="py-5 px-6">
+                  <td className="py-4 px-6">
                     {dataHarga.length !== 0 &&
                       wilayah === 'Jabodetabek' &&
                       dataHarga[0].dataBensinUmum[7]?.harga}
@@ -211,7 +209,7 @@ const TabelHarga = () => {
                       wilayah != 'Jabodetabek' &&
                       'N/A'}
                   </td>
-                  <td className="py-5 px-6">
+                  <td className="py-4 px-6">
                     {dataHarga.length !== 0 &&
                       wilayah === 'Jabodetabek' &&
                       dataHarga[0].dataBensinUmum[10]?.harga}
@@ -223,12 +221,12 @@ const TabelHarga = () => {
                 <tr className="bg-gray-700 border-b border-gray-700">
                   <th
                     scope="row"
-                    className="py-5 px-6 font-bold text-white whitespace-nowrap"
+                    className="py-4 px-6 font-bold text-white whitespace-nowrap"
                   >
                     95
                   </th>
-                  <td className="py-5 px-6">N/A</td>
-                  <td className="py-5 px-6">
+                  <td className="py-4 px-6">N/A</td>
+                  <td className="py-4 px-6">
                     {dataHarga.length !== 0 &&
                       wilayah === 'Jabodetabek' &&
                       dataHarga[0].dataBensinUmum[4]?.harga}
@@ -263,7 +261,7 @@ const TabelHarga = () => {
                     {dataHarga.length !== 0 && wilayah === 'Papua' && 'N/A'}
                     {dataHarga.length !== 0 && wilayah === 'Maluku' && 'N/A'}
                   </td>
-                  <td className="py-5 px-6">
+                  <td className="py-4 px-6">
                     {dataHarga.length !== 0 &&
                       wilayah === 'Jabodetabek' &&
                       dataHarga[0].dataBensinUmum[8]?.harga}
@@ -271,7 +269,7 @@ const TabelHarga = () => {
                       wilayah != 'Jabodetabek' &&
                       'N/A'}
                   </td>
-                  <td className="py-5 px-6">
+                  <td className="py-4 px-6">
                     {dataHarga.length !== 0 &&
                       wilayah === 'Jabodetabek' &&
                       dataHarga[0].dataBensinUmum[11]?.harga}
@@ -283,11 +281,11 @@ const TabelHarga = () => {
                 <tr className="bg-gray-800 border-b border-gray-800">
                   <th
                     scope="row"
-                    className="py-5 px-6 font-bold text-white whitespace-nowrap"
+                    className="py-4 px-6 font-bold text-white whitespace-nowrap"
                   >
                     98
                   </th>
-                  <td className="py-5 px-6">
+                  <td className="py-4 px-6">
                     {dataHarga.length !== 0 && (
                       <>
                         <span>{dataHarga[0].dataBensinUmum[2]?.harga}</span>
@@ -298,7 +296,7 @@ const TabelHarga = () => {
                       </>
                     )}
                   </td>
-                  <td className="py-5 px-6">
+                  <td className="py-4 px-6">
                     {dataHarga.length !== 0 &&
                       wilayah === 'Jabodetabek' &&
                       dataHarga[0].dataBensinUmum[5]?.harga}
@@ -327,8 +325,8 @@ const TabelHarga = () => {
                     {dataHarga.length !== 0 && wilayah === 'Papua' && 'N/A'}
                     {dataHarga.length !== 0 && wilayah === 'Maluku' && 'N/A'}
                   </td>
-                  <td className="py-5 px-6">N/A</td>
-                  <td className="py-5 px-6">N/A</td>
+                  <td className="py-4 px-6">N/A</td>
+                  <td className="py-4 px-6">N/A</td>
                 </tr>
               </tbody>
             </table>
@@ -360,20 +358,20 @@ const TabelHarga = () => {
           </div>
         </div>
 
-        <div className="overflow-x-auto relative sm:rounded-lg flex justify-center mt-5">
+        <div className="overflow-x-auto relative sm:rounded-lg md:flex md:justify-center mt-5">
           <table className="text-sm text-left text-white w-full md:w-3/5 table-auto">
             <thead className="text-xs text-white uppercase bg-green-600">
               <tr>
-                <th scope="col" className="py-5 px-6">
+                <th scope="col" className="py-3 px-6">
                   CN
                 </th>
-                <th scope="col" className="py-5 px-6">
+                <th scope="col" className="py-3 px-6">
                   Pertamina
                 </th>
-                <th scope="col" className="py-5 px-6">
+                <th scope="col" className="py-3 px-6">
                   Shell
                 </th>
-                <th scope="col" className="py-5 px-6">
+                <th scope="col" className="py-3 px-6">
                   British Petroleum
                 </th>
               </tr>
@@ -382,11 +380,11 @@ const TabelHarga = () => {
               <tr className="bg-gray-700 border-b border-gray-700">
                 <th
                   scope="row"
-                  className="py-5 px-6 font-bold text-white whitespace-nowrap"
+                  className="py-4 px-6 font-bold text-white whitespace-nowrap"
                 >
                   48
                 </th>
-                <td className="py-5 px-6">
+                <td className="py-4 px-6">
                   {dataHarga.length !== 0 &&
                     wilayah === 'Jabodetabek' &&
                     dataHarga[0].dataBensinDiesel[5]?.harga}
@@ -402,8 +400,8 @@ const TabelHarga = () => {
                     wilayah !== 'Sumatra' &&
                     dataHarga[0].dataBensinDiesel[2]?.harga}
                 </td>
-                <td className="py-5 px-6">N/A</td>
-                <td className="py-5 px-6">
+                <td className="py-4 px-6">N/A</td>
+                <td className="py-4 px-6">
                   {dataHarga.length !== 0 &&
                     wilayah === 'Jabodetabek' &&
                     dataHarga[0].dataBensinDiesel[4]?.harga}
@@ -413,11 +411,11 @@ const TabelHarga = () => {
               <tr className="bg-gray-800 border-b border-gray-800">
                 <th
                   scope="row"
-                  className="py-5 px-6 font-bold text-white whitespace-nowrap"
+                  className="py-4 px-6 font-bold text-white whitespace-nowrap"
                 >
                   51
                 </th>
-                <td className="py-5 px-6">
+                <td className="py-4 px-6">
                   {dataHarga.length !== 0 && (
                     <>
                       <span>{dataHarga[0].dataBensinDiesel[1]?.harga}</span>
@@ -428,7 +426,7 @@ const TabelHarga = () => {
                     </>
                   )}
                 </td>
-                <td className="py-5 px-6">
+                <td className="py-4 px-6">
                   {dataHarga.length !== 0 &&
                     wilayah === 'Jabodetabek' &&
                     dataHarga[0].dataBensinDiesel[2]?.harga}
@@ -456,16 +454,16 @@ const TabelHarga = () => {
                     wilayah !== 'Sumatra' &&
                     'N/A'}
                 </td>
-                <td className="py-5 px-6">N/A</td>
+                <td className="py-4 px-6">N/A</td>
               </tr>
               <tr className="bg-gray-700 border-b border-gray-700">
                 <th
                   scope="row"
-                  className="py-5 px-6 font-bold text-white whitespace-nowrap"
+                  className="py-4 px-6 font-bold text-white whitespace-nowrap"
                 >
                   53
                 </th>
-                <td className="py-5 px-6">
+                <td className="py-4 px-6">
                   {dataHarga.length !== 0 && (
                     <>
                       <span>{dataHarga[0].dataBensinDiesel[0]?.harga}</span>
@@ -476,7 +474,7 @@ const TabelHarga = () => {
                     </>
                   )}
                 </td>
-                <td className="py-5 px-6">
+                <td className="py-4 px-6">
                   {dataHarga.length !== 0 &&
                     wilayah === 'Jabodetabek' &&
                     dataHarga[0].dataBensinDiesel[3]?.harga}
@@ -504,7 +502,7 @@ const TabelHarga = () => {
                     wilayah !== 'Sumatra' &&
                     'N/A'}
                 </td>
-                <td className="py-5 px-6">N/A</td>
+                <td className="py-4 px-6">N/A</td>
               </tr>
             </tbody>
           </table>
