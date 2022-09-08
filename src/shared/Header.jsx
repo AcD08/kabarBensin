@@ -25,6 +25,7 @@ const Header = () => {
       },
     };
     const collapse = new window.Collapse(element, options);
+    console.log(collapse);
   }, []);
   return (
     <>
