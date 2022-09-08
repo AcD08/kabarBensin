@@ -3,7 +3,6 @@ import Moment from 'moment';
 
 const Blog = () => {
   const [dataBerita, setDataBerita] = useState([]);
-  const [limitedBerita, setLimitedBerita] = useState([]);
 
   useEffect(() => {
     fetch('https://api-berita-indonesia.vercel.app/cnn/ekonomi')
