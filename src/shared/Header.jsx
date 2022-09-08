@@ -90,12 +90,9 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <a
-                  href="/home"
-                  className="block py-2 pr-4 pl-3 text-gray-400 rounded hover:bg-blue-500 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-1 font-bold   "
-                >
+                <Link to="/" className="menuNotActive">
                   FAQ
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
