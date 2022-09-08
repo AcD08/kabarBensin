@@ -5,3 +5,12 @@
 * {
   font-family: 'Overpass', sans-serif;
 }
+
+@layer components {
+  .menuActive {
+    @apply block py-2 pr-4 pl-3 text-white bg-blue-600 rounded md:bg-transparent md:text-blue-700 md:p-1 dark:bg-blue-600 font-bold uppercase;
+  }
+  .menuNotActive {
+    @apply block py-2 pr-4 pl-3 text-gray-400 rounded hover:bg-blue-500 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-1 font-bold uppercase;
+  }
+}

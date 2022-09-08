@@ -3,6 +3,7 @@ import Moment from 'moment';
 
 const Blog = () => {
   const [dataBerita, setDataBerita] = useState([]);
+  const [limitedBerita, setLimitedBerita] = useState([]);
 
   useEffect(() => {
     fetch('https://api-berita-indonesia.vercel.app/cnn/ekonomi')
@@ -16,6 +17,8 @@ const Blog = () => {
       return item.description.includes('BBM');
     });
 
+  if (filteredData.length !== 0 || filteredData.length === null) {
+  }
   return (
     <>
       <div className="flex justify-center mt-10 flex-wrap ">
@@ -25,13 +28,13 @@ const Blog = () => {
         <p className="text-sm w-full text-center">by CNN News.</p>
         {dataBerita.length === 0 ? 'loading data...' : ''}
         {dataBerita.length !== 0 &&
-          filteredData.map((item, index) => {
+          filteredData.slice(0, 10).map((item, index) => {
             return (
-              <div className="listBerita mx-2 my-2" key={index}>
+              <div className="listBerita mx-1 my-2 md:w-4/12" key={index}>
                 <a
                   target="_blank"
                   href={item.link}
-                  className="block p-3 max-w-md bg-gray-800 rounded-lg border border-gray-700 hover:bg-gray-500"
+                  className="block p-5 max-w-md md:h-full bg-gray-800 rounded-lg border border-gray-700 hover:bg-gray-500"
                   rel="noreferrer"
                 >
                   <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
