@@ -3,7 +3,9 @@ import { useState } from 'react';
 const Header = React.lazy(() => import('../shared/Header'));
 
 const KalkulatorHarga = () => {
-  let [statusPage, setStatusPage] = useState(true);
+  let [statusPage, setStatusPage] = useState();
+
+  setStatusPage(true);
   return (
     <>
       <Header />
