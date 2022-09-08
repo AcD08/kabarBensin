@@ -33,7 +33,7 @@ const Blog = () => {
                 <a
                   target="_blank"
                   href={item.link}
-                  className="block p-5 max-w-md md:h-full bg-gray-800 rounded-lg border border-gray-700 hover:bg-gray-500"
+                  className="block p-3 max-w-md md:h-full bg-gray-800 rounded-lg border border-gray-700 hover:bg-gray-500"
                   rel="noreferrer"
                 >
                   <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">

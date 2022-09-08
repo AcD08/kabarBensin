@@ -1,10 +1,31 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useRef } from 'react';
 import { FaGasPump } from 'react-icons/fa';
-import { Helmet } from 'react-helmet';
+// import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
+  const ref = useRef(null);
+  const btnRef = useRef(null);
   const location = useLocation();
+
+  useEffect(() => {
+    const element = ref.current;
+    const elementBtn = btnRef.current;
+    const options = {
+      triggerEl: elementBtn,
+      onCollapse: () => {
+        console.log('element has been collapsed');
+      },
+      onExpand: () => {
+        console.log('element has been expanded');
+      },
+      onToggle: () => {
+        console.log('element has been toggled');
+      },
+    };
+    const collapse = new window.Collapse(element, options);
+  }, []);
   return (
     <>
       <nav className="p-5 bg-slate-800 border-gray-200 w-full md:w-full lg:w-full 2xl:w-full rounded sm:w-full 5xl:w-full">
@@ -14,6 +35,7 @@ const Header = () => {
             <FaGasPump size={10} className="inline-block" />n
           </span>
           <button
+            ref={btnRef}
             data-collapse-toggle="navbar-solid-bg"
             type="button"
             className="inline-flex justify-center items-center ml-3 text-gray-400 rounded-lg md:hidden hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 dark:text-gray-400 dark:hover:text-white dark:focus:ring-gray-500"
@@ -39,13 +61,16 @@ const Header = () => {
           <div
             className="hidden w-full md:block md:w-auto md:ml-10 md:mt-0 p-3 md:p-0"
             id="navbar-solid-bg"
+            ref={ref}
           >
             <ul className="flex flex-col mt-4 bg-slate-800 rounded-lg md:flex-row md:space-x-3 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent m-5 space-y-1 md:space-y-0 md:m-0">
               <li>
                 <Link
                   to="/"
                   className={
-                    location.pathname === '/' ? 'menuActive' : 'menuNotActive'
+                    location.pathname === '/home'
+                      ? 'menuActive'
+                      : 'menuNotActive'
                   }
                 >
                   Home
@@ -55,7 +80,7 @@ const Header = () => {
                 <Link
                   to="kalkulator"
                   className={
-                    location.pathname === '/kalkulator'
+                    location.pathname === '/home/kalkulator'
                       ? 'menuActive'
                       : 'menuNotActive'
                   }
@@ -65,7 +90,7 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  href="/"
+                  href="/home"
                   className="block py-2 pr-4 pl-3 text-gray-400 rounded hover:bg-blue-500 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-1 font-bold   "
                 >
                   FAQ
@@ -75,13 +100,18 @@ const Header = () => {
           </div>
         </div>
       </nav>
-      <Helmet>
-        <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
-        <script>
-          const targetEl = document.getElementById('navbar-solid-bg'); const
-          collapse = new Collapse(targetEl);
-        </script>
-      </Helmet>
+      {/* <HelmetProvider>
+        <Helmet>
+          <script
+            src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"
+            type="text/javascript"
+          ></script>
+          <script type="text/javascript">
+            let targetEl = document.getElementById('navbar-solid-bg'); let
+            collapse = new Collapse(targetEl);
+          </script>
+        </Helmet>
+      </HelmetProvider> */}
     </>
   );
 };

@@ -1,5 +1,10 @@
 import React, { Suspense } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Navigate,
+  Route,
+  Routes,
+} from 'react-router-dom';
 // Views
 const Home = React.lazy(() => import('./views/Home'));
 const KalkulatorHarga = React.lazy(() => import('./views/KalkulatorHarga'));
@@ -31,8 +36,9 @@ function App() {
     <Router>
       <Suspense fallback={loading}>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/kalkulator" element={<KalkulatorHarga />}></Route>
+          <Route path="/home" element={<Home />} />
+          <Route path="/home/kalkulator" element={<KalkulatorHarga />}></Route>
+          <Route path="*" element={<Navigate to="/home" replace />} />
         </Routes>
       </Suspense>
     </Router>
