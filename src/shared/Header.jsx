@@ -69,9 +69,7 @@ const Header = () => {
                 <Link
                   to="/"
                   className={
-                    location.pathname === '/home'
-                      ? 'menuActive'
-                      : 'menuNotActive'
+                    location.pathname === '/' ? 'menuActive' : 'menuNotActive'
                   }
                 >
                   Home
@@ -81,7 +79,7 @@ const Header = () => {
                 <Link
                   to="kalkulator"
                   className={
-                    location.pathname === '/home/kalkulator'
+                    location.pathname === '/kalkulator'
                       ? 'menuActive'
                       : 'menuNotActive'
                   }

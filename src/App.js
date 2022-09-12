@@ -36,9 +36,8 @@ function App() {
     <Router>
       <Suspense fallback={loading}>
         <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/home/kalkulator" element={<KalkulatorHarga />}></Route>
-          <Route path="*" element={<Navigate to="/home" replace />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/kalkulator" element={<KalkulatorHarga />}></Route>
         </Routes>
       </Suspense>
     </Router>
