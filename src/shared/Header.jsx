@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect } from 'react';
 import { useRef } from 'react';
 import { FaGasPump } from 'react-icons/fa';
@@ -25,7 +26,6 @@ const Header = () => {
       },
     };
     const collapse = new window.Collapse(element, options);
-    console.log(collapse);
   }, []);
   return (
     <>
