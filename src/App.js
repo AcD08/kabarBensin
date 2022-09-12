@@ -1,10 +1,5 @@
 import React, { Suspense } from 'react';
-import {
-  BrowserRouter as Router,
-  Navigate,
-  Route,
-  Routes,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // Views
 const Home = React.lazy(() => import('./views/Home'));
 const KalkulatorHarga = React.lazy(() => import('./views/KalkulatorHarga'));
