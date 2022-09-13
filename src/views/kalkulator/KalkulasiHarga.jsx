@@ -8,7 +8,8 @@ const KalkulasiHarga = () => {
   const [dataBensin, setDataBensin] = useState([]);
   const [dataHarga, setDataHarga] = useState();
   const [hasil, setHasil] = useState();
-  const [hasilRegex, setHasilRegex] = useState();
+  const [hasilRegex, setHasilRegex] = useState('');
+
   useEffect(() => {
     const filteredWilayah = hargaJson.data.content.find(
       item => item.namaWilyah === wilayah
@@ -43,7 +44,7 @@ const KalkulasiHarga = () => {
       setDataHarga(tempData);
     }
 
-    if (hasil !== null || hasil.length !== 0) {
+    if (hasil !== undefined) {
       const reverseNumber = hasil?.toString().split('').reverse().join('');
       const ribuanNumber = reverseNumber?.match(/\d{1,3}/g);
       setHasilRegex(
